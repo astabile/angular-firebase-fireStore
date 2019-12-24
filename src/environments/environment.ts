@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: 'http://localhost:5000/angular-firebase-firesto-afa9c/us-central1'
+  //url: 'http://localhost:5000/angular-firebase-firesto-afa9c/us-central1'
+  url: 'https://us-central1-angular-firebase-firesto-afa9c.cloudfunctions.net/' 
 };
 
 /*
