@@ -1560,7 +1560,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false,
-      url: 'http://localhost:5000/angular-firebase-firesto-afa9c/us-central1'
+      //url: 'http://localhost:5000/angular-firebase-firesto-afa9c/us-central1'
+      url: 'https://us-central1-angular-firebase-firesto-afa9c.cloudfunctions.net/'
     };
     /*
      * For easier debugging in development mode, you can import the following file
