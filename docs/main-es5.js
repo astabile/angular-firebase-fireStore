@@ -119,7 +119,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p class=\"container\">Coming soon..</p>";
+    __webpack_exports__["default"] = "<h2>Vote for the game of the year</h2>\r\n<hr>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <div class=\"card-columns\">\r\n            <div class=\"card bg-dark\" *ngFor=\"let game of games\">\r\n                <img [src]=\"game.url\" class=\"card-img-top\" [alt]=\"game.name\">\r\n                <div class=\"card-body\">\r\n                    <h5  class=\"card-title\">{{ game.name }}</h5 >\r\n                    <button class=\"btn btn-clock btn-outline-primary\">Vote</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
     /***/
   },
 
@@ -894,31 +894,37 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _components_components_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _components_components_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./components/components.module */
     "./src/app/components/components.module.ts");
     /* harmony import */
 
 
-    var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./pages/index/index.component */
     "./src/app/pages/index/index.component.ts");
     /* harmony import */
 
 
-    var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./pages/goty/goty.component */
     "./src/app/pages/goty/goty.component.ts");
 
@@ -927,10 +933,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_index_index_component__WEBPACK_IMPORTED_MODULE_6__["IndexComponent"], _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_7__["GotyComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _components_components_module__WEBPACK_IMPORTED_MODULE_5__["ComponentsModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__["IndexComponent"], _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__["GotyComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _components_components_module__WEBPACK_IMPORTED_MODULE_6__["ComponentsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]],
       providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
     /***/
   },
@@ -1264,7 +1270,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2dvdHkvZ290eS5jb21wb25lbnQuY3NzIn0= */";
+    __webpack_exports__["default"] = ".card-columns {\r\n    -moz-column-count: 4;\r\n         column-count: 4;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvZ290eS9nb3R5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBZTtTQUFmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9nb3R5L2dvdHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWNvbHVtbnMge1xyXG4gICAgY29sdW1uLWNvdW50OiA0O1xyXG59Il19 */";
     /***/
   },
 
@@ -1299,21 +1305,42 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_game_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/game.service */
+    "./src/app/services/game.service.ts");
 
     var GotyComponent =
     /*#__PURE__*/
     function () {
-      function GotyComponent() {
+      function GotyComponent(_game) {
         _classCallCheck(this, GotyComponent);
+
+        this._game = _game;
+        this.games = [];
       }
 
       _createClass(GotyComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this._game.getNominates().subscribe(function (resp) {
+            _this2.games = resp;
+          });
+        }
       }]);
 
       return GotyComponent;
     }();
+
+    GotyComponent.ctorParameters = function () {
+      return [{
+        type: src_app_services_game_service__WEBPACK_IMPORTED_MODULE_2__["GameService"]
+      }];
+    };
 
     GotyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-goty',
@@ -1407,6 +1434,102 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/services/game.service.ts":
+  /*!******************************************!*\
+    !*** ./src/app/services/game.service.ts ***!
+    \******************************************/
+
+  /*! exports provided: GameService */
+
+  /***/
+  function srcAppServicesGameServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "GameService", function () {
+      return GameService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var src_environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+
+    var GameService =
+    /*#__PURE__*/
+    function () {
+      function GameService(http) {
+        _classCallCheck(this, GameService);
+
+        this.http = http;
+        this.games = [];
+      }
+
+      _createClass(GameService, [{
+        key: "getNominates",
+        value: function getNominates() {
+          var _this3 = this;
+
+          if (this.games.length > 0) {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(this.games);
+          } else {
+            return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].url, "/api/goty")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["tap"])(function (games) {
+              return _this3.games = games;
+            }));
+          }
+        }
+      }]);
+
+      return GameService;
+    }();
+
+    GameService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    GameService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], GameService);
+    /***/
+  },
+
+  /***/
   "./src/environments/environment.ts":
   /*!*****************************************!*\
     !*** ./src/environments/environment.ts ***!
@@ -1436,7 +1559,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     var environment = {
-      production: false
+      production: false,
+      url: 'http://localhost:5000/angular-firebase-firesto-afa9c/us-central1'
     };
     /*
      * For easier debugging in development mode, you can import the following file

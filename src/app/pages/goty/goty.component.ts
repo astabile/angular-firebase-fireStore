@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from 'src/app/services/game.service';
+import { Game } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-goty',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GotyComponent implements OnInit {
 
-  constructor() { }
+  games: Game[] = [];
+
+  constructor(private _game: GameService) { }
 
   ngOnInit() {
+    this._game.getNominates()
+      .subscribe(resp => {
+        this.games = resp;
+      });
   }
-
 }
