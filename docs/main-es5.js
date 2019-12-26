@@ -750,12 +750,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./pages/goty/goty.component */
     "./src/app/pages/goty/goty.component.ts");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/fesm2015/common.js");
 
     var routes = [{
       path: 'index',
@@ -777,11 +771,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, {
         useHash: true
       })],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
-      providers: [{
-        provide: _angular_common__WEBPACK_IMPORTED_MODULE_5__["APP_BASE_HREF"],
-        useValue: '/'
-      }]
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })], AppRoutingModule);
     /***/
   },
