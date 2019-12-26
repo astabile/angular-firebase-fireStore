@@ -99,40 +99,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark\">\n    <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"assets/angular.png\" width=\"30\" height=\"30\" alt=\"angular logo\">\n    </a>\n    <a class=\"navbar-brand\" href=\"#\">GOTY</a>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/index\">Home</a>\n            </li>\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/goty\">Vote</a>\n            </li>\n        </ul>\n    </div>\n</nav>";
+    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark\">\n    <a class=\"navbar-brand\">\n        <img src=\"assets/angular.png\" width=\"30\" height=\"30\" alt=\"angular logo\">\n    </a>\n    <a class=\"navbar-brand\">GOTY</a>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/home\">Home</a>\n            </li>\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/vote\">Vote</a>\n            </li>\n        </ul>\n    </div>\n</nav>";
     /***/
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html":
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html":
   /*!**************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html ***!
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html ***!
     \**************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppPagesGotyGotyComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<h2>Vote for the game of the year</h2>\r\n<hr>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <div class=\"card-columns\">\r\n            <div class=\"card bg-dark\" *ngFor=\"let game of games\">\r\n                <img [src]=\"game.url\" class=\"card-img-top\" [alt]=\"game.name\">\r\n                <div class=\"card-body\">\r\n                    <h5  class=\"card-title\">{{ game.name }}</h5 >\r\n                    <button class=\"btn btn-clock btn-outline-primary\">Vote</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
-    /***/
-  },
-
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html":
-  /*!****************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html ***!
-    \****************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppPagesIndexIndexComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesHomeHomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -140,6 +120,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     __webpack_exports__["default"] = "<h2>Game of the year!</h2>\n<hr>\n<div class=\"container\"></div>\n<div class=\"row\">\n    <div class=\"col\">\n        <app-graphics></app-graphics>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html":
+  /*!**************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html ***!
+    \**************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesVoteVoteComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<h2>Vote for the game of the year</h2>\r\n<hr>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <div class=\"card-columns\">\r\n            <div class=\"card bg-dark\" *ngFor=\"let game of games\">\r\n                <img [src]=\"game.url\" class=\"card-img-top\" [alt]=\"game.name\">\r\n                <div class=\"card-body\">\r\n                    <h5  class=\"card-title\">{{ game.name }}</h5 >\r\n                    <button class=\"btn btn-clock btn-outline-primary\">Vote</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
     /***/
   },
 
@@ -741,26 +741,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./pages/index/index.component */
-    "./src/app/pages/index/index.component.ts");
+    var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./pages/home/home.component */
+    "./src/app/pages/home/home.component.ts");
     /* harmony import */
 
 
-    var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./pages/goty/goty.component */
-    "./src/app/pages/goty/goty.component.ts");
+    var _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./pages/vote/vote.component */
+    "./src/app/pages/vote/vote.component.ts");
 
     var routes = [{
-      path: 'index',
-      component: _pages_index_index_component__WEBPACK_IMPORTED_MODULE_3__["IndexComponent"]
+      path: 'home',
+      component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
     }, {
-      path: 'goty',
-      component: _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_4__["GotyComponent"]
+      path: 'vote',
+      component: _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_4__["VoteComponent"]
     }, {
       path: '**',
       pathMatch: 'full',
-      redirectTo: 'index'
+      redirectTo: 'home'
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -910,22 +910,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./pages/index/index.component */
-    "./src/app/pages/index/index.component.ts");
+    var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./pages/home/home.component */
+    "./src/app/pages/home/home.component.ts");
     /* harmony import */
 
 
-    var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./pages/goty/goty.component */
-    "./src/app/pages/goty/goty.component.ts");
+    var _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./pages/vote/vote.component */
+    "./src/app/pages/vote/vote.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__["IndexComponent"], _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__["GotyComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_8__["VoteComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _components_components_module__WEBPACK_IMPORTED_MODULE_6__["ComponentsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -1247,43 +1247,122 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/pages/goty/goty.component.css":
+  "./src/app/pages/home/home.component.css":
   /*!***********************************************!*\
-    !*** ./src/app/pages/goty/goty.component.css ***!
+    !*** ./src/app/pages/home/home.component.css ***!
     \***********************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppPagesGotyGotyComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppPagesHomeHomeComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".card-columns {\r\n    -moz-column-count: 4;\r\n         column-count: 4;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvZ290eS9nb3R5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBZTtTQUFmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9nb3R5L2dvdHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWNvbHVtbnMge1xyXG4gICAgY29sdW1uLWNvdW50OiA0O1xyXG59Il19 */";
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */";
     /***/
   },
 
   /***/
-  "./src/app/pages/goty/goty.component.ts":
+  "./src/app/pages/home/home.component.ts":
   /*!**********************************************!*\
-    !*** ./src/app/pages/goty/goty.component.ts ***!
+    !*** ./src/app/pages/home/home.component.ts ***!
     \**********************************************/
 
-  /*! exports provided: GotyComponent */
+  /*! exports provided: HomeComponent */
 
   /***/
-  function srcAppPagesGotyGotyComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppPagesHomeHomeComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "GotyComponent", function () {
-      return GotyComponent;
+    __webpack_require__.d(__webpack_exports__, "HomeComponent", function () {
+      return HomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var HomeComponent =
+    /*#__PURE__*/
+    function () {
+      function HomeComponent() {
+        _classCallCheck(this, HomeComponent);
+      }
+
+      _createClass(HomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return HomeComponent;
+    }();
+
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-index',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./home.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./home.component.css */
+      "./src/app/pages/home/home.component.css")).default]
+    })], HomeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/vote/vote.component.css":
+  /*!***********************************************!*\
+    !*** ./src/app/pages/vote/vote.component.css ***!
+    \***********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesVoteVoteComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".card-columns {\r\n    -moz-column-count: 4;\r\n         column-count: 4;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdm90ZS92b3RlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBZTtTQUFmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy92b3RlL3ZvdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWNvbHVtbnMge1xyXG4gICAgY29sdW1uLWNvdW50OiA0O1xyXG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/vote/vote.component.ts":
+  /*!**********************************************!*\
+    !*** ./src/app/pages/vote/vote.component.ts ***!
+    \**********************************************/
+
+  /*! exports provided: VoteComponent */
+
+  /***/
+  function srcAppPagesVoteVoteComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "VoteComponent", function () {
+      return VoteComponent;
     });
     /* harmony import */
 
@@ -1304,17 +1383,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! src/app/services/game.service */
     "./src/app/services/game.service.ts");
 
-    var GotyComponent =
+    var VoteComponent =
     /*#__PURE__*/
     function () {
-      function GotyComponent(_game) {
-        _classCallCheck(this, GotyComponent);
+      function VoteComponent(_game) {
+        _classCallCheck(this, VoteComponent);
 
         this._game = _game;
         this.games = [];
       }
 
-      _createClass(GotyComponent, [{
+      _createClass(VoteComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           var _this2 = this;
@@ -1325,103 +1404,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }]);
 
-      return GotyComponent;
+      return VoteComponent;
     }();
 
-    GotyComponent.ctorParameters = function () {
+    VoteComponent.ctorParameters = function () {
       return [{
         type: src_app_services_game_service__WEBPACK_IMPORTED_MODULE_2__["GameService"]
       }];
     };
 
-    GotyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+    VoteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-goty',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./goty.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html")).default,
+      /*! raw-loader!./vote.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html")).default,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./goty.component.css */
-      "./src/app/pages/goty/goty.component.css")).default]
-    })], GotyComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/pages/index/index.component.css":
-  /*!*************************************************!*\
-    !*** ./src/app/pages/index/index.component.css ***!
-    \*************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function srcAppPagesIndexIndexComponentCss(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luZGV4L2luZGV4LmNvbXBvbmVudC5jc3MifQ== */";
-    /***/
-  },
-
-  /***/
-  "./src/app/pages/index/index.component.ts":
-  /*!************************************************!*\
-    !*** ./src/app/pages/index/index.component.ts ***!
-    \************************************************/
-
-  /*! exports provided: IndexComponent */
-
-  /***/
-  function srcAppPagesIndexIndexComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "IndexComponent", function () {
-      return IndexComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-
-    var IndexComponent =
-    /*#__PURE__*/
-    function () {
-      function IndexComponent() {
-        _classCallCheck(this, IndexComponent);
-      }
-
-      _createClass(IndexComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {}
-      }]);
-
-      return IndexComponent;
-    }();
-
-    IndexComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-index',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./index.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html")).default,
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./index.component.css */
-      "./src/app/pages/index/index.component.css")).default]
-    })], IndexComponent);
+      /*! ./vote.component.css */
+      "./src/app/pages/vote/vote.component.css")).default]
+    })], VoteComponent);
     /***/
   },
 

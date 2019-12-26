@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from './pages/index/index.component';
-import { GotyComponent } from './pages/goty/goty.component';
+import { HomeComponent } from './pages/home/home.component';
+import { VoteComponent } from './pages/vote/vote.component';
 
 const routes: Routes = [
-  {path: 'index', component: IndexComponent},
-  {path: 'goty', component: GotyComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'index'}
+  {path: 'home', component: HomeComponent},
+  {path: 'vote', component: VoteComponent},
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

@@ -4,10 +4,10 @@ import { Game } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-goty',
-  templateUrl: './goty.component.html',
-  styleUrls: ['./goty.component.css']
+  templateUrl: './vote.component.html',
+  styleUrls: ['./vote.component.css']
 })
-export class GotyComponent implements OnInit {
+export class VoteComponent implements OnInit {
 
   games: Game[] = [];
 

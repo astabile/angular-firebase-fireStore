@@ -58,13 +58,26 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark\">\n    <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"assets/angular.png\" width=\"30\" height=\"30\" alt=\"angular logo\">\n    </a>\n    <a class=\"navbar-brand\" href=\"#\">GOTY</a>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/index\">Home</a>\n            </li>\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/goty\">Vote</a>\n            </li>\n        </ul>\n    </div>\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark\">\n    <a class=\"navbar-brand\">\n        <img src=\"assets/angular.png\" width=\"30\" height=\"30\" alt=\"angular logo\">\n    </a>\n    <a class=\"navbar-brand\">GOTY</a>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/home\">Home</a>\n            </li>\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a class=\"nav-link\" routerLink=\"/vote\">Vote</a>\n            </li>\n        </ul>\n    </div>\n</nav>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html":
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html":
 /*!**************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html ***!
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<h2>Game of the year!</h2>\n<hr>\n<div class=\"container\"></div>\n<div class=\"row\">\n    <div class=\"col\">\n        <app-graphics></app-graphics>\n    </div>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html ***!
   \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -72,19 +85,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<h2>Vote for the game of the year</h2>\r\n<hr>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col\">\r\n        <div class=\"card-columns\">\r\n            <div class=\"card bg-dark\" *ngFor=\"let game of games\">\r\n                <img [src]=\"game.url\" class=\"card-img-top\" [alt]=\"game.name\">\r\n                <div class=\"card-body\">\r\n                    <h5  class=\"card-title\">{{ game.name }}</h5 >\r\n                    <button class=\"btn btn-clock btn-outline-primary\">Vote</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html ***!
-  \****************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h2>Game of the year!</h2>\n<hr>\n<div class=\"container\"></div>\n<div class=\"row\">\n    <div class=\"col\">\n        <app-graphics></app-graphics>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -330,17 +330,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/index/index.component */ "./src/app/pages/index/index.component.ts");
-/* harmony import */ var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/goty/goty.component */ "./src/app/pages/goty/goty.component.ts");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/vote/vote.component */ "./src/app/pages/vote/vote.component.ts");
 
 
 
 
 
 const routes = [
-    { path: 'index', component: _pages_index_index_component__WEBPACK_IMPORTED_MODULE_3__["IndexComponent"] },
-    { path: 'goty', component: _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_4__["GotyComponent"] },
-    { path: '**', pathMatch: 'full', redirectTo: 'index' }
+    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+    { path: 'vote', component: _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_4__["VoteComponent"] },
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -416,8 +416,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _components_components_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/components.module */ "./src/app/components/components.module.ts");
-/* harmony import */ var _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/index/index.component */ "./src/app/pages/index/index.component.ts");
-/* harmony import */ var _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/goty/goty.component */ "./src/app/pages/goty/goty.component.ts");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/vote/vote.component */ "./src/app/pages/vote/vote.component.ts");
 
 
 
@@ -433,8 +433,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _pages_index_index_component__WEBPACK_IMPORTED_MODULE_7__["IndexComponent"],
-            _pages_goty_goty_component__WEBPACK_IMPORTED_MODULE_8__["GotyComponent"]
+            _pages_home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
+            _pages_vote_vote_component__WEBPACK_IMPORTED_MODULE_8__["VoteComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -656,36 +656,80 @@ NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/pages/goty/goty.component.css":
+/***/ "./src/app/pages/home/home.component.css":
 /*!***********************************************!*\
-  !*** ./src/app/pages/goty/goty.component.css ***!
+  !*** ./src/app/pages/home/home.component.css ***!
   \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".card-columns {\r\n    -moz-column-count: 4;\r\n         column-count: 4;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvZ290eS9nb3R5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBZTtTQUFmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9nb3R5L2dvdHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWNvbHVtbnMge1xyXG4gICAgY29sdW1uLWNvdW50OiA0O1xyXG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/pages/goty/goty.component.ts":
+/***/ "./src/app/pages/home/home.component.ts":
 /*!**********************************************!*\
-  !*** ./src/app/pages/goty/goty.component.ts ***!
+  !*** ./src/app/pages/home/home.component.ts ***!
   \**********************************************/
-/*! exports provided: GotyComponent */
+/*! exports provided: HomeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GotyComponent", function() { return GotyComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HomeComponent = class HomeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-index',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home.component.css */ "./src/app/pages/home/home.component.css")).default]
+    })
+], HomeComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/vote/vote.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/pages/vote/vote.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".card-columns {\r\n    -moz-column-count: 4;\r\n         column-count: 4;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdm90ZS92b3RlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBZTtTQUFmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy92b3RlL3ZvdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkLWNvbHVtbnMge1xyXG4gICAgY29sdW1uLWNvdW50OiA0O1xyXG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/vote/vote.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pages/vote/vote.component.ts ***!
+  \**********************************************/
+/*! exports provided: VoteComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoteComponent", function() { return VoteComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_app_services_game_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/game.service */ "./src/app/services/game.service.ts");
 
 
 
-let GotyComponent = class GotyComponent {
+let VoteComponent = class VoteComponent {
     constructor(_game) {
         this._game = _game;
         this.games = [];
@@ -697,60 +741,16 @@ let GotyComponent = class GotyComponent {
         });
     }
 };
-GotyComponent.ctorParameters = () => [
+VoteComponent.ctorParameters = () => [
     { type: src_app_services_game_service__WEBPACK_IMPORTED_MODULE_2__["GameService"] }
 ];
-GotyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+VoteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-goty',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./goty.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/goty/goty.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./goty.component.css */ "./src/app/pages/goty/goty.component.css")).default]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./vote.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/vote/vote.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./vote.component.css */ "./src/app/pages/vote/vote.component.css")).default]
     })
-], GotyComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/pages/index/index.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/pages/index/index.component.css ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2luZGV4L2luZGV4LmNvbXBvbmVudC5jc3MifQ== */");
-
-/***/ }),
-
-/***/ "./src/app/pages/index/index.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/pages/index/index.component.ts ***!
-  \************************************************/
-/*! exports provided: IndexComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IndexComponent", function() { return IndexComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let IndexComponent = class IndexComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-IndexComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-index',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./index.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/index/index.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./index.component.css */ "./src/app/pages/index/index.component.css")).default]
-    })
-], IndexComponent);
+], VoteComponent);
 
 
 

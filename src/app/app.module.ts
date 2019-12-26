@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 
 import { ComponentsModule } from './components/components.module';
 
-import { IndexComponent } from './pages/index/index.component';
-import { GotyComponent } from './pages/goty/goty.component';
+import { HomeComponent } from './pages/home/home.component';
+import { VoteComponent } from './pages/vote/vote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    GotyComponent
+    HomeComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,
